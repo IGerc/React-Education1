@@ -1,17 +1,19 @@
+import s from './Nav.module.css'
+
 const Nav = () => {
     return (
-      <nav className='nav'>
-      <div>
-        profile
+      <nav className={s.nav}>
+      <div className={`${s.item} ${s.active}`}>
+      <a>profile</a>
       </div>
-      <div>
-        Messages
+      <div className={s.item}>
+        <a>Messages</a>
       </div>
-      <div>
-        news
+      <div className={s.item}>
+        <a>news</a>
       </div>
-      <div>
-        settings
+      <div className={s.item}>
+        <a>settings</a>
       </div>
     </nav>
     )
